@@ -31,7 +31,7 @@ const Quotemachine = (props) => (
         />
       </Col>
       <Col sm={{ span: 3, offset: 4 }} xs={{ span: 5, offset: 1 }}>
-        <Button buttonName={"New Quote"} clickHandler={props.newQuote} />
+        <Button buttonName={props.buttonName} clickHandler={props.newQuote} />
       </Col>
     </Row>
   </Card>

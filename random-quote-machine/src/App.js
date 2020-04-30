@@ -4,12 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Quotemachine from "./components/quotemachine/Quotemachine";
 import Container from "react-bootstrap/Container";
 
-const screencenter = {
-  display: "flex",
-  height: "100vh",
-  alignItems: "center",
-  justifyContent: "center",
-};
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -53,11 +47,12 @@ class App extends React.Component {
   render() {
     console.log(this.state.selectedQuote);
     return (
-      <Container style={screencenter} id='quote-box'>
+      <Container id='quote-box'>
         <Quotemachine
           pickedRandomQuote={this.state.selectedQuote.quote}
           pickedAuthor={this.state.selectedQuote.author}
           newQuote={this.setQuote}
+          buttonName={"New Quote"}
         />
       </Container>
     );
