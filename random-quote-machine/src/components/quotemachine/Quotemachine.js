@@ -25,7 +25,10 @@ const Quotemachine = (props) => (
     </Row>
     <Row>
       <Col sm={{ span: 3, offset: 1 }} xs={{ span: 4, offset: 1 }}>
-        <ShareSS />
+        <ShareSS
+          textShare={props.pickedRandomQuote}
+          authorShare={props.pickedAuthor}
+        />
       </Col>
       <Col sm={{ span: 3, offset: 4 }} xs={{ span: 5, offset: 1 }}>
         <Button buttonName={"New Quote"} clickHandler={props.newQuote} />

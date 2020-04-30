@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
-const ShareSS = () => (
+const ShareSS = (props) => (
   <div>
     <button>
       <a
-        href='https://twitter.com/intent/tweet'
-        target='_blank'
+        href={`https://twitter.com/intent/tweet?text=${props.textShare}--${props.authorShare}`}
         rel='noopener noreferrer'
+        target='_blank'
         id='tweet-quote'
       >
         <FontAwesomeIcon icon={faTwitter}> </FontAwesomeIcon>
