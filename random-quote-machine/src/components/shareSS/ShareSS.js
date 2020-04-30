@@ -7,7 +7,7 @@ const ShareSS = (props) => (
   <div>
     <button>
       <a
-        href={`https://twitter.com/intent/tweet?text=${props.textShare}--${props.authorShare}`}
+        href={`https://twitter.com/intent/tweet?text=${props.textShare}-${props.authorShare}&hashtags=randomquote`}
         rel='noopener noreferrer'
         target='_blank'
         id='tweet-quote'
@@ -18,7 +18,7 @@ const ShareSS = (props) => (
 
     <button>
       <a
-        href='https://wa.me/?text=Some+Text'
+        href={`https://wa.me/?text=${props.textShare}-${props.authorShare}`}
         target='_blank'
         rel='noopener noreferrer'
         id='whatsapp-quote'
