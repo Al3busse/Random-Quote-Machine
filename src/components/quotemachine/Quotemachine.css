@@ -5,7 +5,6 @@
   margin: 3rem;
 }
 
-.button {
-  align-items: center;
-  justify-items: center;
+#author {
+  text-align: center;
 }
