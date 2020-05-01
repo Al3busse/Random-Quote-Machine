@@ -17,6 +17,5 @@
 }
 
 #text {
-  text-align: center;
-  text-justify: auto;
+  text-align: justify;
 }
