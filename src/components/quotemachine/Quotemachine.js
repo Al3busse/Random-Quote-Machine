@@ -13,7 +13,7 @@ const Quotemachine = (props) => (
     <Row>
       <Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
         <p id='text'>
-          "{props.pickedRandomQuote ? props.pickedRandomQuote : ""}"
+          "{props.pickedRandomQuote ? props.pickedRandomQuote : undefined}"
         </p>
       </Col>
     </Row>
