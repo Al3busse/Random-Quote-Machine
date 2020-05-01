@@ -23,7 +23,7 @@ const Quotemachine = (props) => (
       </Col>
     </Row>
     <Row>
-      <Col sm={{ span: 6 }} xs={{ span: 6 }}>
+      <Col sm={{ span: 6 }} xs={{ span: 6 }} id='buttonSS-container'>
         <ShareSS
           textShare={props.pickedRandomQuote}
           authorShare={props.pickedAuthor}
