@@ -18,7 +18,7 @@ class App extends React.Component {
     this.state = {
       quotes: [],
       selectedQuote: [],
-      flashing: null,
+      flashing: "div",
     };
     this.selectRandomQuote = this.selectRandomQuote.bind(this);
     this.setQuote = this.setQuote.bind(this);
