@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/Random-Quote-Machine/static/css/main.469a2339.chunk.css",
-    "main.js": "/Random-Quote-Machine/static/js/main.bb33a0c7.chunk.js",
-    "main.js.map": "/Random-Quote-Machine/static/js/main.bb33a0c7.chunk.js.map",
+    "main.css": "/Random-Quote-Machine/static/css/main.3794fcbc.chunk.css",
+    "main.js": "/Random-Quote-Machine/static/js/main.76032172.chunk.js",
+    "main.js.map": "/Random-Quote-Machine/static/js/main.76032172.chunk.js.map",
     "runtime-main.js": "/Random-Quote-Machine/static/js/runtime-main.7f38bf1c.js",
     "runtime-main.js.map": "/Random-Quote-Machine/static/js/runtime-main.7f38bf1c.js.map",
     "static/css/2.69121389.chunk.css": "/Random-Quote-Machine/static/css/2.69121389.chunk.css",
-    "static/js/2.6b509768.chunk.js": "/Random-Quote-Machine/static/js/2.6b509768.chunk.js",
-    "static/js/2.6b509768.chunk.js.map": "/Random-Quote-Machine/static/js/2.6b509768.chunk.js.map",
+    "static/js/2.7e81b09d.chunk.js": "/Random-Quote-Machine/static/js/2.7e81b09d.chunk.js",
+    "static/js/2.7e81b09d.chunk.js.map": "/Random-Quote-Machine/static/js/2.7e81b09d.chunk.js.map",
     "index.html": "/Random-Quote-Machine/index.html",
-    "precache-manifest.ffd995be11c8f0a683f153fac4152f90.js": "/Random-Quote-Machine/precache-manifest.ffd995be11c8f0a683f153fac4152f90.js",
+    "precache-manifest.a75888f09083c46e424f5d42b2b14ca5.js": "/Random-Quote-Machine/precache-manifest.a75888f09083c46e424f5d42b2b14ca5.js",
     "service-worker.js": "/Random-Quote-Machine/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/Random-Quote-Machine/static/css/2.69121389.chunk.css.map",
-    "static/css/main.469a2339.chunk.css.map": "/Random-Quote-Machine/static/css/main.469a2339.chunk.css.map",
-    "static/js/2.6b509768.chunk.js.LICENSE.txt": "/Random-Quote-Machine/static/js/2.6b509768.chunk.js.LICENSE.txt"
+    "static/css/main.3794fcbc.chunk.css.map": "/Random-Quote-Machine/static/css/main.3794fcbc.chunk.css.map",
+    "static/js/2.7e81b09d.chunk.js.LICENSE.txt": "/Random-Quote-Machine/static/js/2.7e81b09d.chunk.js.LICENSE.txt",
+    "static/media/BerkshireSwash-Regular.ttf": "/Random-Quote-Machine/static/media/BerkshireSwash-Regular.dc7bceaa.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.7f38bf1c.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.6b509768.chunk.js",
-    "static/css/main.469a2339.chunk.css",
-    "static/js/main.bb33a0c7.chunk.js"
+    "static/js/2.7e81b09d.chunk.js",
+    "static/css/main.3794fcbc.chunk.css",
+    "static/js/main.76032172.chunk.js"
   ]
 }
