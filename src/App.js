@@ -5,7 +5,7 @@ import Quotemachine from "./components/quotemachine/Quotemachine";
 import Container from "react-bootstrap/Container";
 import "./fonts/BerkshireSwash-Regular.ttf";
 import styled, { keyframes } from "styled-components";
-import Flash from "@bit/formidablelabs.react-animations.flash";
+import Flash from "react-animations/lib/flash";
 const FlashAnimation = keyframes`${Flash}`;
 const FlashDiv = styled.div`
   animation: 3s ${FlashAnimation};
