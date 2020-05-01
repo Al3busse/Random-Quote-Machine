@@ -19,7 +19,7 @@ const Quotemachine = (props) => (
     </Row>
     <Row>
       <Col sm={{ span: 8, offset: 4 }} xs={{ span: 8, offset: 4 }}>
-        <p id='author'>{props.pickedAuthor ? props.pickedAuthor : ""}</p>
+        <p id='author'>{props.pickedAuthor ? props.pickedAuthor : undefined}</p>
       </Col>
     </Row>
     <Row>
