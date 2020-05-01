@@ -22,7 +22,6 @@ class App extends React.Component {
     };
     this.selectRandomQuote = this.selectRandomQuote.bind(this);
     this.setQuote = this.setQuote.bind(this);
-    this.afterSetStateFinished = this.afterSetStateFinished.bind(this);
   }
 
   componentDidMount() {
