@@ -18,6 +18,7 @@ class App extends React.Component {
     this.state = {
       quotes: [],
       selectedQuote: [],
+      flashing: null,
     };
     this.selectRandomQuote = this.selectRandomQuote.bind(this);
     this.setQuote = this.setQuote.bind(this);
@@ -48,13 +49,14 @@ class App extends React.Component {
   setQuote() {
     this.setState({
       selectedQuote: this.selectRandomQuote(),
+      flashing: FlashDiv,
     });
   }
 
   render() {
     console.log(this.state.selectedQuote);
     return (
-      <FlashDiv>
+      <this.state.flashing>
         <Container id='quote-box'>
           <Quotemachine
             pickedRandomQuote={this.state.selectedQuote.quote}
@@ -63,7 +65,7 @@ class App extends React.Component {
             buttonName={"New Quote"}
           />
         </Container>
-      </FlashDiv>
+      </this.state.flashing>
     );
   }
 }
