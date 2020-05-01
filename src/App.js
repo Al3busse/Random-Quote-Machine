@@ -57,9 +57,14 @@ class App extends React.Component {
   }
 
   setQuote() {
-    this.setState({
-      selectedQuote: this.selectRandomQuote(),
-    });
+    setTimeout(
+      function () {
+        this.setState({
+          selectedQuote: this.selectRandomQuote(),
+        });
+      }.bind(this),
+      1500
+    );
     this.setState(
       {
         flashing: FlashDiv,
