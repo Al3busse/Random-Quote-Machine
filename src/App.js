@@ -3,6 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Quotemachine from "./components/quotemachine/Quotemachine";
 import Container from "react-bootstrap/Container";
+import "./fonts/BerkshireSwash-Regular.ttf";
 
 class App extends React.Component {
   constructor(props) {
