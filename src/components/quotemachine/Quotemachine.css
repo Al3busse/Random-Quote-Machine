@@ -17,5 +17,10 @@
 }
 
 #text {
-  text-align: justify;
+  text-align: center;
+  margin: 3vh;
+  font-family: BerkshireSwash;
+  font-weight: 400;
+  font-size: 4vh;
+  color: red;
 }
