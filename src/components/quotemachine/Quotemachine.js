@@ -5,12 +5,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import "./Quotemachine.css";
 
 const Quotemachine = (props) => (
   <Card>
-    <Card.Title style={{ textAlign: "center" }}>
-      Random Quote Machine
-    </Card.Title>
+    <Card.Title id='card-title'>Random Quote Machine</Card.Title>
     <Row>
       <Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
         <p id='text'>
