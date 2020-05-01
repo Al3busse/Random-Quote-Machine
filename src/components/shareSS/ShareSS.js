@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import "./ShareSS.css";
 
 const ShareSS = (props) => (
   <div>
@@ -12,11 +13,7 @@ const ShareSS = (props) => (
         target='_blank'
         id='tweet-quote'
       >
-        <FontAwesomeIcon
-          icon={faTwitter}
-          size='lg'
-          color='red'
-        ></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faTwitter} size='lg'></FontAwesomeIcon>
       </a>
     </button>
 
@@ -27,11 +24,7 @@ const ShareSS = (props) => (
         rel='noopener noreferrer'
         id='whatsapp-quote'
       >
-        <FontAwesomeIcon
-          icon={faWhatsapp}
-          size='lg'
-          color='red'
-        ></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faWhatsapp} size='lg'></FontAwesomeIcon>
       </a>
     </button>
   </div>
