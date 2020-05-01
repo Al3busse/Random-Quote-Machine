@@ -7,7 +7,9 @@ import "./fonts/BerkshireSwash-Regular.ttf";
 import styled, { keyframes } from "styled-components";
 import Flash from "react-animations/lib/flash";
 
-const FlashDiv = null;
+const FlashDiv = styled.div`
+  animation: 3s ${keyframes`${Flash}`};
+`;
 
 class App extends React.Component {
   constructor(props) {
