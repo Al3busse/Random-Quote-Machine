@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: BerkshireSwash-Regular, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  font-family: "BerkshireSwash", BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @font-face {
-  font-family: "BerkshireSwash-Regular";
-  src: local("BerkshireSwash-Regular"),
+  font-family: "BerkshireSwash";
+  src: local("BerkshireSwash"),
     url("./fonts/BerkshireSwash-Regular.ttf") format("truetype");
 }
 
