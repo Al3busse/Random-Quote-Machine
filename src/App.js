@@ -48,7 +48,12 @@ class App extends React.Component {
   }
 
   afterSetStateFinished() {
-    this.setState({ flashing: "div" });
+    setTimeout(
+      function () {
+        this.setState({ flashing: "div" });
+      }.bind(this),
+      3000
+    );
   }
 
   setQuote() {
