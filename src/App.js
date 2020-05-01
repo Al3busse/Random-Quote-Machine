@@ -53,9 +53,6 @@ class App extends React.Component {
     this.setState({
       flashing: FlashDiv,
     });
-    this.setState({
-      flashing: "div",
-    });
   }
 
   render() {
