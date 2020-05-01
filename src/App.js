@@ -22,6 +22,7 @@ class App extends React.Component {
     };
     this.selectRandomQuote = this.selectRandomQuote.bind(this);
     this.setQuote = this.setQuote.bind(this);
+    this.afterSetStateFinished = this.afterSetStateFinished.bind(this);
   }
 
   componentDidMount() {
@@ -49,7 +50,12 @@ class App extends React.Component {
   setQuote() {
     this.setState({
       selectedQuote: this.selectRandomQuote(),
+    });
+    this.setState({
       flashing: FlashDiv,
+    });
+    this.setState({
+      flashing: "div",
     });
   }
 
