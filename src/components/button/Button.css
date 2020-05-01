@@ -1,8 +1,7 @@
 #new-quote {
   color: red;
-  font-family: fantasy;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   font-size: 2rem;
   margin: 1rem;
-  justify-self: end;
 }
