@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 import "./Quotemachine.css";
 
 const Quotemachine = (props) => (
-  <Card>
+  <Card id='card'>
     <Card.Title id='card-title'>Random Quote Machine</Card.Title>
     <Row>
       <Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
