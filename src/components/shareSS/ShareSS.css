@@ -5,7 +5,5 @@
   color: #38a1f3;
 }
 #button-container {
-  align-content: center;
-  justify-content: center;
-  text-align: center;
+  text-align: justify;
 }
