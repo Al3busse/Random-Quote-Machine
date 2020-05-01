@@ -4,3 +4,8 @@
   font-size: 2rem;
   margin: 3rem;
 }
+
+.button {
+  align-content: center;
+  justify-content: center;
+}
