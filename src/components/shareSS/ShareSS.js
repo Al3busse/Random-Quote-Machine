@@ -5,7 +5,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import "./ShareSS.css";
 
 const ShareSS = (props) => (
-  <div>
+  <div id='button-container'>
     <button>
       <a
         href={`https://twitter.com/intent/tweet?text=${props.textShare}-${props.authorShare}&hashtags=randomquote`}
