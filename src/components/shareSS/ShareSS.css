@@ -7,4 +7,8 @@
 #buttonSS-container {
   text-align: center;
   justify-items: center;
+  align-self: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
 }
