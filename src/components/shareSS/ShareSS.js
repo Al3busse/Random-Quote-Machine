@@ -12,7 +12,7 @@ const ShareSS = (props) => (
         target='_blank'
         id='tweet-quote'
       >
-        <FontAwesomeIcon icon={faTwitter} size='6x'></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faTwitter} size='lg'></FontAwesomeIcon>
       </a>
     </button>
 
@@ -23,7 +23,7 @@ const ShareSS = (props) => (
         rel='noopener noreferrer'
         id='whatsapp-quote'
       >
-        <FontAwesomeIcon icon={faWhatsapp} size='6x'></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faWhatsapp} size='lg'></FontAwesomeIcon>
       </a>
     </button>
   </div>
