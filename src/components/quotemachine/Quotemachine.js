@@ -19,18 +19,18 @@ const Quotemachine = (props) => (
       </Col>
     </Row>
     <Row>
-      <Col sm={{ span: 3, offset: 6 }} xs={{ span: 6, offset: 6 }}>
+      <Col sm={{ span: 6, offset: 6 }} xs={{ span: 6, offset: 6 }}>
         <p id='author'>{props.pickedAuthor ? props.pickedAuthor : ""}</p>
       </Col>
     </Row>
     <Row>
-      <Col sm={{ span: 3, offset: 1 }} xs={{ span: 4, offset: 1 }}>
+      <Col sm={{ span: 6 }} xs={{ span: 6 }}>
         <ShareSS
           textShare={props.pickedRandomQuote}
           authorShare={props.pickedAuthor}
         />
       </Col>
-      <Col sm={{ span: 3, offset: 4 }} xs={{ span: 5, offset: 1 }}>
+      <Col sm={{ span: 6 }} xs={{ span: 6 }}>
         <Button buttonName={props.buttonName} clickHandler={props.newQuote} />
       </Col>
     </Row>
