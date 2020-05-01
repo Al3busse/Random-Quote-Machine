@@ -5,3 +5,8 @@
   font-size: 2rem;
   margin: 1rem;
 }
+
+#button-container {
+  text-align: justify;
+  text-align: center;
+}
