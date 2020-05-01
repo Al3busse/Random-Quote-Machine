@@ -6,10 +6,8 @@ import Container from "react-bootstrap/Container";
 import "./fonts/BerkshireSwash-Regular.ttf";
 import styled, { keyframes } from "styled-components";
 import Flash from "react-animations/lib/flash";
-const FlashAnimation = keyframes`${Flash}`;
-const FlashDiv = styled.div`
-  animation: 3s ${FlashAnimation};
-`;
+
+const FlashDiv = null;
 
 class App extends React.Component {
   constructor(props) {
