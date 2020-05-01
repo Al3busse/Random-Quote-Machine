@@ -4,6 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Quotemachine from "./components/quotemachine/Quotemachine";
 import Container from "react-bootstrap/Container";
 import "./fonts/BerkshireSwash-Regular.ttf";
+import styled, { keyframes } from "styled-components";
+import Flash from "@bit/formidablelabs.react-animations.flash";
+const FlashAnimation = keyframes`${Flash}`;
+const FlashDiv = styled.div`
+  animation: 3s ${FlashAnimation};
+`;
 
 class App extends React.Component {
   constructor(props) {
@@ -48,14 +54,16 @@ class App extends React.Component {
   render() {
     console.log(this.state.selectedQuote);
     return (
-      <Container id='quote-box'>
-        <Quotemachine
-          pickedRandomQuote={this.state.selectedQuote.quote}
-          pickedAuthor={this.state.selectedQuote.author}
-          newQuote={this.setQuote}
-          buttonName={"New Quote"}
-        />
-      </Container>
+      <FlashDiv>
+        <Container id='quote-box'>
+          <Quotemachine
+            pickedRandomQuote={this.state.selectedQuote.quote}
+            pickedAuthor={this.state.selectedQuote.author}
+            newQuote={this.setQuote}
+            buttonName={"New Quote"}
+          />
+        </Container>
+      </FlashDiv>
     );
   }
 }
