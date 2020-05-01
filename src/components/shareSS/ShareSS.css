@@ -4,7 +4,7 @@
 #tweet-quote {
   color: #38a1f3;
 }
-#button-container {
-  text-align: justify;
+#buttonSS-container {
   text-align: center;
+  justify-items: center;
 }
