@@ -1,4 +1,6 @@
 #card-title {
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   font-size: 2rem;
+  margin: 1rem;
 }
