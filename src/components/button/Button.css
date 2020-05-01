@@ -1,7 +1,8 @@
 #new-quote {
   color: red;
-  font-family: "Courier New", Courier, monospace;
+  font-family: fantasy;
   text-align: center;
   font-size: 2rem;
   margin: 1rem;
+  justify-self: end;
 }
