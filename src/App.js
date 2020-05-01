@@ -30,7 +30,12 @@ class App extends React.Component {
       "https://gist.githubusercontent.com/Al3busse/7891ad8844a728eae79cb0d5be696765/raw/303d0453f3bfb205a218f8cd510962c7a950788c/funnyQuotes.json"
     )
       .then((data) => data.json())
-      .then((quotes) => this.setState({ quotes }));
+      .then((quotes) => this.setState({ quotes }))
+      .then(() =>
+        this.setState({
+          selectedQuote: this.selectRandomQuote(),
+        })
+      );
   }
 
   selectRandomQuote() {
@@ -58,7 +63,7 @@ class App extends React.Component {
           selectedQuote: this.selectRandomQuote(),
         });
       }.bind(this),
-      1500
+      2000
     );
     this.setState(
       {
