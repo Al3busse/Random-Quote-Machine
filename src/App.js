@@ -4,12 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Quotemachine from "./components/quotemachine/Quotemachine";
 import Container from "react-bootstrap/Container";
 import "./fonts/BerkshireSwash-Regular.ttf";
-import styled, { keyframes } from "styled-components";
-import Flash from "react-animations/lib/flash";
-
-const FlashDiv = styled.div`
-  animation: 3s ${keyframes`${Flash}`};
-`;
 
 class App extends React.Component {
   constructor(props) {
@@ -18,11 +12,9 @@ class App extends React.Component {
     this.state = {
       quotes: [],
       selectedQuote: [],
-      flashing: "div",
     };
     this.selectRandomQuote = this.selectRandomQuote.bind(this);
     this.setQuote = this.setQuote.bind(this);
-    this.afterSetStateFinished = this.afterSetStateFinished.bind(this);
   }
 
   componentDidMount() {
@@ -47,15 +39,6 @@ class App extends React.Component {
     ];
   }
 
-  afterSetStateFinished() {
-    setTimeout(
-      function () {
-        this.setState({ flashing: "div" });
-      }.bind(this),
-      3000
-    );
-  }
-
   setQuote() {
     setTimeout(
       function () {
@@ -65,30 +48,20 @@ class App extends React.Component {
       }.bind(this),
       2000
     );
-
-    this.setState(
-      {
-        flashing: FlashDiv,
-      },
-      () => {
-        this.afterSetStateFinished();
-      }
-    );
   }
 
   render() {
     return (
-      <this.state.flashing>
-        <Container id='quote-box'>
-          <Quotemachine
-            pickedRandomQuote={this.state.selectedQuote.quote}
-            pickedAuthor={this.state.selectedQuote.author}
-            newQuote={this.setQuote}
-            buttonName={"New Quote"}
-          />
-        </Container>
-      </this.state.flashing>
+      <Container id='quote-box'>
+        <Quotemachine
+          pickedRandomQuote={this.state.selectedQuote.quote}
+          pickedAuthor={this.state.selectedQuote.author}
+          newQuote={this.setQuote}
+          buttonName={"New Quote"}
+        />
+      </Container>
     );
   }
 }
+
 export default App;
