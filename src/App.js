@@ -25,7 +25,7 @@ class App extends React.Component {
     this.afterSetStateFinished = this.afterSetStateFinished.bind(this);
   }
 
-  componentDidMount() {
+  componentWillMount() {
     fetch(
       "https://gist.githubusercontent.com/Al3busse/7891ad8844a728eae79cb0d5be696765/raw/303d0453f3bfb205a218f8cd510962c7a950788c/funnyQuotes.json"
     )
@@ -65,14 +65,18 @@ class App extends React.Component {
       }.bind(this),
       2000
     );
-    this.setState({ flashing: "div" });
-    this.setState({
-      flashing: FlashDiv,
-    });
+
+    this.setState(
+      {
+        flashing: FlashDiv,
+      },
+      () => {
+        this.afterSetStateFinished();
+      }
+    );
   }
 
   render() {
-    console.log(this.state.selectedQuote);
     return (
       <this.state.flashing>
         <Container id='quote-box'>
