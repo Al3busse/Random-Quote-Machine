@@ -65,14 +65,10 @@ class App extends React.Component {
       }.bind(this),
       2000
     );
-    this.setState(
-      {
-        flashing: FlashDiv,
-      },
-      () => {
-        this.afterSetStateFinished();
-      }
-    );
+    this.setState({ flashing: "div" });
+    this.setState({
+      flashing: FlashDiv,
+    });
   }
 
   render() {
