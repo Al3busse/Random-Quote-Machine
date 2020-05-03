@@ -2,8 +2,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   font-size: 1.3em;
-  margin: 0.3em;
-  background-color: hsla(0, 0%, 100%, 0.507);
+  margin: 1em 0.3em 1em 0.3em;
+  background-color: hsla(0, 0%, 44%, 0.644);
   border-radius: 10px;
   font-weight: 500;
 }

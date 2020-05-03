@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 import "./Quotemachine.css";
 
 const Quotemachine = (props) => (
-  <Card id='card' style={{ boxShadow: "5px 5px 50px 3px" }}>
+  <Card id='card' style={{ boxShadow: "3px 3px 20px 0px" }}>
     <Card.Title id='card-title' style={{ color: props.textColor }}>
       Random Quote Machine
     </Card.Title>
@@ -32,7 +32,7 @@ const Quotemachine = (props) => (
           textShare={props.pickedRandomQuote}
           authorShare={props.pickedAuthor}
           borderColor={{
-            border: "2px solid" + props.textColor,
+            border: "1px solid" + props.textColor,
             boxShadow: "1px 1px 10px 1px" + props.textColor,
           }}
         />
@@ -43,7 +43,7 @@ const Quotemachine = (props) => (
           clickHandler={props.newQuote}
           textColor={{
             color: props.textColor,
-            border: "2px solid" + props.textColor,
+            border: "1px solid" + props.textColor,
             boxShadow: "1px 1px 10px 1px" + props.textColor,
           }}
         />
