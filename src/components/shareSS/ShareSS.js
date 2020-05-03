@@ -6,7 +6,7 @@ import "./ShareSS.css";
 
 const ShareSS = (props) => (
   <div>
-    <button>
+    <button className='buttonClass' style={props.borderColor}>
       <a
         href={`https://twitter.com/intent/tweet?text=${props.textShare}-${props.authorShare}&hashtags=randomquote`}
         rel='noopener noreferrer'
@@ -17,7 +17,7 @@ const ShareSS = (props) => (
       </a>
     </button>
 
-    <button>
+    <button className='buttonClass' style={props.borderColor}>
       <a
         href={`https://wa.me/?text=${props.textShare}-${props.authorShare}`}
         target='_blank'

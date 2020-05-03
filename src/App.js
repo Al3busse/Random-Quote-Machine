@@ -5,10 +5,10 @@ import Quotemachine from "./components/quotemachine/Quotemachine";
 import Container from "react-bootstrap/Container";
 import "./fonts/BerkshireSwash-Regular.ttf";
 import styled, { keyframes } from "styled-components";
-import Flash from "react-animations/lib/flash";
+import { flash } from "react-animations";
 
 const FlashDiv = styled.div`
-  animation: 3s ${keyframes`${Flash}`};
+  animation: 1.8s ${keyframes`${flash}`};
 `;
 
 class App extends React.Component {
@@ -19,10 +19,12 @@ class App extends React.Component {
       quotes: [],
       selectedQuote: [],
       flashing: "div",
+      colorHexCode: "white",
     };
     this.selectRandomQuote = this.selectRandomQuote.bind(this);
     this.setQuote = this.setQuote.bind(this);
     this.afterSetStateFinished = this.afterSetStateFinished.bind(this);
+    this.randomColor = this.randomColor.bind(this);
   }
 
   componentDidMount() {
@@ -34,6 +36,7 @@ class App extends React.Component {
       .then(() =>
         this.setState({
           selectedQuote: this.selectRandomQuote(),
+          colorHexCode: this.randomColor(),
         })
       );
   }
@@ -52,8 +55,12 @@ class App extends React.Component {
       function () {
         this.setState({ flashing: "div" });
       }.bind(this),
-      3000
+      1900
     );
+  }
+
+  randomColor() {
+    return "#" + (((1 << 24) * Math.random()) | 0).toString(16);
   }
 
   setQuote() {
@@ -61,9 +68,12 @@ class App extends React.Component {
       function () {
         this.setState({
           selectedQuote: this.selectRandomQuote(),
+
+          colorHexCode: this.randomColor(),
         });
       }.bind(this),
-      2000
+
+      900
     );
 
     this.setState(
@@ -78,9 +88,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <this.state.flashing>
+      <this.state.flashing style={{ backgroundColor: this.state.colorHexCode }}>
         <Container id='quote-box'>
           <Quotemachine
+            textColor={this.state.colorHexCode}
             pickedRandomQuote={this.state.selectedQuote.quote}
             pickedAuthor={this.state.selectedQuote.author}
             newQuote={this.setQuote}

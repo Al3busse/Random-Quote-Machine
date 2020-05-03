@@ -4,3 +4,9 @@
 #tweet-quote {
   color: #38a1f3;
 }
+
+.buttonClass {
+  background-color: hsla(0, 0%, 100%, 0.329);
+  border-radius: 10px;
+  margin: 3px;
+}

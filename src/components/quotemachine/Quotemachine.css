@@ -1,35 +1,31 @@
 #card-title {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  font-size: 6vh;
-  margin: 3vh;
-  color: red;
+  font-size: 4vh;
+  margin: 2vh;
 }
 
 #author {
   text-align: center;
-  font-size: 3vh;
-  font-weight: 200;
-  color: red;
+  font-size: 2.3vh;
+  font-weight: 400;
 }
 
 #buttonSS-container {
   text-align: center;
   margin: auto;
   font-weight: 400;
-  font-size: 4vh;
+  font-size: 3vh;
 }
 
 #text {
   text-align: center;
-  margin: 3vh;
+  margin: 1vw;
   font-family: BerkshireSwash;
   font-weight: 400;
-  font-size: 4vh;
-  color: red;
+  font-size: 3vh;
 }
 
 #card {
-  -webkit-box-shadow: 5px 5px 15px 5px #000000;
-  box-shadow: 5px 5px 15px 5px #000000;
+  background-color: hsla(0, 0%, 100%, 0.644);
 }

@@ -8,18 +8,22 @@ import Card from "react-bootstrap/Card";
 import "./Quotemachine.css";
 
 const Quotemachine = (props) => (
-  <Card id='card'>
-    <Card.Title id='card-title'>Random Quote Machine</Card.Title>
+  <Card id='card' style={{ boxShadow: "5px 5px 50px 3px" }}>
+    <Card.Title id='card-title' style={{ color: props.textColor }}>
+      Random Quote Machine
+    </Card.Title>
     <Row>
       <Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
-        <p id='text'>
+        <p id='text' style={{ color: props.textColor }}>
           "{props.pickedRandomQuote ? props.pickedRandomQuote : undefined}"
         </p>
       </Col>
     </Row>
     <Row>
       <Col sm={{ span: 8, offset: 4 }} xs={{ span: 8, offset: 4 }}>
-        <p id='author'>{props.pickedAuthor ? props.pickedAuthor : undefined}</p>
+        <p id='author' style={{ color: props.textColor }}>
+          {props.pickedAuthor ? props.pickedAuthor : undefined}
+        </p>
       </Col>
     </Row>
     <Row>
@@ -27,10 +31,22 @@ const Quotemachine = (props) => (
         <ShareSS
           textShare={props.pickedRandomQuote}
           authorShare={props.pickedAuthor}
+          borderColor={{
+            border: "2px solid" + props.textColor,
+            boxShadow: "1px 1px 10px 1px" + props.textColor,
+          }}
         />
       </Col>
       <Col sm={{ span: 6 }} xs={{ span: 6 }}>
-        <Button buttonName={props.buttonName} clickHandler={props.newQuote} />
+        <Button
+          buttonName={props.buttonName}
+          clickHandler={props.newQuote}
+          textColor={{
+            color: props.textColor,
+            border: "2px solid" + props.textColor,
+            boxShadow: "1px 1px 10px 1px" + props.textColor,
+          }}
+        />
       </Col>
     </Row>
   </Card>

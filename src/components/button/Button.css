@@ -1,9 +1,10 @@
 #new-quote {
-  color: red;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3vh;
   margin: 1vh;
+  background-color: hsla(0, 0%, 100%, 0.329);
+  border-radius: 3px;
 }
 
 #button-container {
