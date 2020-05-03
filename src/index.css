@@ -1,15 +1,25 @@
 body {
   margin: 0;
-  font-family: BerkshireSwash, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @font-face {
-  font-family: "BerkshireSwash";
-  src: local("BerkshireSwash"),
-    url("./fonts/BerkshireSwash-Regular.ttf") format("truetype");
+  font-family: "Great Vibes";
+  src: local("GreatVibes"),
+    url("./fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nova Cut";
+  src: local("NovaCut"), url("./fonts/NovaCut-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: local("Permanent Marker"),
+    url("./fonts/PermanentMarker-Regular.ttf") format("truetype");
 }
 
 code {

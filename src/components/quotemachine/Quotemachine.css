@@ -7,8 +7,9 @@
 
 #author {
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400;
+  font-family: Great Vibes;
 }
 
 #buttonSS-container {
@@ -21,9 +22,9 @@
 #text {
   text-align: center;
   margin: 1vw;
-  font-family: BerkshireSwash;
+  font-family: Permanent Marker;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 
 #card {

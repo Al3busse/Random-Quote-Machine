@@ -3,7 +3,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Quotemachine from "./components/quotemachine/Quotemachine";
 import Container from "react-bootstrap/Container";
-import "./fonts/BerkshireSwash-Regular.ttf";
+import "./fonts/NovaCut-Regular.ttf";
+import "./fonts/GreatVibes-Regular.ttf";
+import "./fonts/PermanentMarker-Regular.ttf";
 import styled, { keyframes } from "styled-components";
 import { flash } from "react-animations";
 
