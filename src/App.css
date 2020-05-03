@@ -8,11 +8,9 @@
 #footer {
   text-align: center;
   display: block;
-  margin-top: 10px;
+  margin-top: 2em;
   font-size: 0.8em;
   color: #fff;
-  font-weight: 500;
-  text-decoration: none;
 }
 
 #footerA {
