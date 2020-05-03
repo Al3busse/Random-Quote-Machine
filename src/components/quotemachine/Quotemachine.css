@@ -1,13 +1,13 @@
 #card-title {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  font-size: 4vh;
+  font-size: 2em;
   margin: 2vh;
 }
 
 #author {
   text-align: center;
-  font-size: 2.3vh;
+  font-size: 0.8em;
   font-weight: 400;
 }
 
@@ -15,7 +15,7 @@
   text-align: center;
   margin: auto;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 1em;
 }
 
 #text {
@@ -23,7 +23,7 @@
   margin: 1vw;
   font-family: BerkshireSwash;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 1.1em;
 }
 
 #card {

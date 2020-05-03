@@ -1,6 +1,22 @@
 #quote-box {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   align-items: center;
   justify-content: center;
+}
+#footer {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#footerA {
+  font-weight: 800;
+  text-decoration: none;
+  color: #fff;
 }
