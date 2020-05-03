@@ -6,7 +6,12 @@
 }
 
 .buttonClass {
-  background-color: hsla(0, 0%, 100%, 0.329);
+  background-color: hsla(0, 0%, 100%, 0.507);
   border-radius: 10px;
-  margin: 3px;
+  margin: 0.3em;
+}
+
+.buttonClass:hover {
+  background-color: hsla(0, 0%, 100%, 0.753);
+  transform: scale(1.1, 1.1);
 }
