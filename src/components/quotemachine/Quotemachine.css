@@ -3,7 +3,7 @@
   font-size: 1.8rem;
   font-weight: 200;
   font-family: Great Vibes;
-  margin-top: 1rem;
+  margin-right: 0.5rem;
 }
 
 #buttonSS-container {
@@ -19,10 +19,11 @@
   font-family: Permanent Marker;
   font-weight: 400;
   font-size: 1.6rem;
-  margin-top: 1rem;
+
+  margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 #card {
   background-color: hsla(0, 0%, 0%, 0.808);
-  margin: 1rem auto 1rem auto;
+  margin: 1rem;
 }

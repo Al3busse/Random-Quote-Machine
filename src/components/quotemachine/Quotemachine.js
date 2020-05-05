@@ -10,7 +10,7 @@ import "./Quotemachine.css";
 const Quotemachine = (props) => (
   <Card id='card' style={{ boxShadow: "3px 3px 20px 0px" }}>
     <Row>
-      <Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+      <Col sm={{ span: 12 }} xs={{ span: 12 }} style={{ margin: "auto" }}>
         <p id='text' style={{ color: props.textColor }}>
           "{props.pickedRandomQuote ? props.pickedRandomQuote : undefined}"
         </p>

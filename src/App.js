@@ -3,6 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Quotemachine from "./components/quotemachine/Quotemachine";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import "./fonts/NovaCut-Regular.ttf";
 import "./fonts/GreatVibes-Regular.ttf";
 import "./fonts/PermanentMarker-Regular.ttf";
@@ -99,23 +100,37 @@ class App extends React.Component {
 
   render() {
     return (
-      <this.state.flashing>
-        <h1 id='title'>Random Quote Machine</h1>
-        <Container id='quote-box'>
-          <Quotemachine
-            textColor={this.state.colorHexCode}
-            pickedRandomQuote={this.state.selectedQuote.quote}
-            pickedAuthor={this.state.selectedQuote.author}
-            newQuote={this.setQuote}
-            buttonName={"New Quote"}
-          />
-        </Container>
-        <footer id='footer'>
-          Made by{" "}
-          <a href='https://github.com/Al3busse' id='footerA'>
-            Alejandro Busse
-          </a>
-        </footer>
+      <this.state.flashing
+        Container
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          margin: "auto",
+          alignItems: "center",
+        }}
+      >
+        <Row>
+          <h1 id='title'>Random Quote Machine</h1>
+        </Row>
+        <Row>
+          <Container id='quote-box'>
+            <Quotemachine
+              textColor={this.state.colorHexCode}
+              pickedRandomQuote={this.state.selectedQuote.quote}
+              pickedAuthor={this.state.selectedQuote.author}
+              newQuote={this.setQuote}
+              buttonName={"New Quote"}
+            />
+          </Container>
+        </Row>
+        <Row>
+          <footer id='footer'>
+            Made by{" "}
+            <a href='https://github.com/Al3busse' id='footerA'>
+              Alejandro Busse
+            </a>
+          </footer>
+        </Row>
       </this.state.flashing>
     );
   }
