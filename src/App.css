@@ -4,7 +4,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 0 auto;
+  margin: auto;
 }
 #footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

@@ -109,13 +109,13 @@ class App extends React.Component {
             newQuote={this.setQuote}
             buttonName={"New Quote"}
           />
-          <footer id='footer'>
-            Made by{" "}
-            <a href='https://github.com/Al3busse' id='footerA'>
-              Alejandro Busse
-            </a>
-          </footer>
         </Container>
+        <footer id='footer'>
+          Made by{" "}
+          <a href='https://github.com/Al3busse' id='footerA'>
+            Alejandro Busse
+          </a>
+        </footer>
       </this.state.flashing>
     );
   }
