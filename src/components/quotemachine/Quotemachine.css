@@ -15,7 +15,7 @@
 
 #text {
   text-align: center;
-  margin: 1vw;
+
   font-family: Permanent Marker;
   font-weight: 400;
   font-size: 1.6rem;
@@ -25,5 +25,6 @@
 
 #card {
   background-color: hsla(0, 0%, 0%, 0.808);
+
   margin: 1rem;
 }
