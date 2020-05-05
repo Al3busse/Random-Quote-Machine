@@ -1,15 +1,9 @@
-#card-title {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  font-size: 2.2rem;
-  margin: 2vh;
-}
-
 #author {
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 200;
   font-family: Great Vibes;
+  margin-top: 1rem;
 }
 
 #buttonSS-container {
@@ -25,8 +19,10 @@
   font-family: Permanent Marker;
   font-weight: 400;
   font-size: 1.6rem;
+  margin-top: 1rem;
 }
 
 #card {
   background-color: hsla(0, 0%, 0%, 0.808);
+  margin: 1rem auto auto auto;
 }

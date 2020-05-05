@@ -9,9 +9,6 @@ import "./Quotemachine.css";
 
 const Quotemachine = (props) => (
   <Card id='card' style={{ boxShadow: "3px 3px 20px 0px" }}>
-    <Card.Title id='card-title' style={{ color: props.textColor }}>
-      Random Quote Machine
-    </Card.Title>
     <Row>
       <Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
         <p id='text' style={{ color: props.textColor }}>

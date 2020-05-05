@@ -43,6 +43,15 @@ class App extends React.Component {
       );
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    const bgColor = this.state.colorHexCode;
+
+    if (prevProps.bgColor !== bgColor) {
+      const bodyElt = document.querySelector("body");
+      bodyElt.style.backgroundColor = bgColor;
+    }
+  }
+
   selectRandomQuote() {
     if (!this.state.quotes.length) {
       return;
@@ -90,7 +99,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <this.state.flashing style={{ backgroundColor: this.state.colorHexCode }}>
+      <this.state.flashing>
+        <h1 id='title'>Random Quote Machine</h1>
         <Container id='quote-box'>
           <Quotemachine
             textColor={this.state.colorHexCode}
