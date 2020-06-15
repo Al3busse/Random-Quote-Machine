@@ -19,7 +19,7 @@ const ShareSS = (props) => (
 
     <button className='buttonClass' style={props.borderColor}>
       <a
-        href={`https://api.whatsapp.com/?text=${props.textShare}-${props.authorShare}`}
+        href={`https://api.whatsapp.com/send?text=${props.textShare}-${props.authorShare}`}
         target='_blank'
         rel='noopener noreferrer'
         id='whatsapp-quote'
